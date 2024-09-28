@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Partner Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#">
+                    <img src="data:image/png;base64,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" alt="Shopify Logo" class="h-8">
+                </a>
+            </div>
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-500 hover:text-black">Blog</a>
+                <a href="#" class="text-gray-500 hover:text-black">Community</a>
+                <a href="#" class="text-gray-500 hover:text-black">Resources</a>
+                <a href="#" class="text-gray-500 hover:text-black">Shopify Academy</a>
+            </nav>
+            <!-- User Actions -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-500 hover:text-black">Login</a>
+                <a href="#" class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Build your business as a Shopify Partner</h1>
+                <p class="text-gray-600 mb-6">
+                    Increase your earnings, enhance your skills, and expand your network as part of our thriving global community of agency, app, consulting, and technology partners.
+                </p>
+                <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600">Join now</a>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/2b7f5465eb7c05578b700222acc653db.png?width=744&height=646" alt="Laura Gemmell" class="rounded-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Ways to Partner Section -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Ways to partner with Shopify</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Agency Partners -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/854659293d8063d0c5ec6380ff9dbcea.png?width=397&height=397" alt="Agency Partners" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Agency Partners</h3>
+                    <p class="text-gray-600">
+                        Help businesses with Shopify setup, design, and marketing services to help them succeed.
+                    </p>
+                </div>
+
+                <!-- App Partners -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/854659293d8063d0c5ec6380ff9dbcea.png?width=397&height=397" alt="App Partners" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">App Partners</h3>
+                    <p class="text-gray-600">
+                        Build apps that help merchants increase sales, manage their store, and more.
+                    </p>
+                </div>
+
+                <!-- Consulting Partners -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/854659293d8063d0c5ec6380ff9dbcea.png?width=397&height=397" alt="Consulting Partners" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Consulting Partners</h3>
+                    <p class="text-gray-600">
+                        Provide strategic business consulting to help entrepreneurs grow their business.
+                    </p>
+                </div>
+
+                <!-- Technology Partners -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/854659293d8063d0c5ec6380ff9dbcea.png?width=397&height=397" alt="Technology Partners" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Technology Partners</h3>
+                    <p class="text-gray-600">
+                        Integrate Shopify with other systems and technologies for seamless business operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
